@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	float n;
+	float maior = 0;
+	float menor = 1* (pow(10,80));
+	int i,repetir;
+	printf("Quantos numeros voce deseja verificar?\n");
+	scanf("%i",&repetir);
+	for(i = 1; i <= repetir; i++) {
+		printf("Insira o valor:\n");
+		scanf("%f",&n);
+		if(n > maior) {
+			maior = n;
+		}
+		if(n < menor) {
+			menor = n;
+		}
+		
+	}
+	printf("O maior valor é: %.2f \n",maior);
+	printf("O menor valor é: %.2f",menor);
+
+	return 0;
+}

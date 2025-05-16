@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    float repetir, produtorio;
+    int i;
+    float antigo = 1;
+    printf("Quantos numeros voce deseja mutiplicar?\n");
+    scanf("%f",&repetir);
+    for(i = 1; i <= repetir;i++){
+        printf("Insira o valor:\n");
+        scanf("%f",&produtorio);
+        produtorio = produtorio * antigo;
+        antigo = produtorio;
+        
+    }
+    printf("%.2f",antigo);
+
+    return 0;
+}
