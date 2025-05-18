@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+	int i,repetir;
+	float  n;
+	float positivo = 0;
+	float negativo = 0;
+	printf("Quantos numeros voce deseja verificar?\n");
+	scanf("%i",&repetir);
+	for(i = 1; i <= repetir; i++) {
+		printf("Insira o valor:\n");
+		scanf("%f",&n);
+		if(n >= 0) {
+			 positivo = positivo + 1;
+		}
+		if(n < 0) {
+			negativo = negativo + 1;
+		}
+	}
+	printf("O numero de valores positivos é: %.0f \n",positivo);
+	printf("O numero de valores negativos é: %.0f",negativo);
+
+	return 0;
+}
